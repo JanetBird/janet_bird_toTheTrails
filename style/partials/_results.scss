@@ -1,0 +1,110 @@
+
+.location-div {
+    min-height: 40vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    display: flex;
+    &-place {
+        color: $color-accent3;
+        font-style: italic;
+    }
+    &-info {
+        padding: 100px 0;
+        display: flex;
+    }
+    &-stats {
+        width: 50%;
+    }
+    &-img {
+        width: 50%;
+        img {
+        margin-left: 50px;
+        width: 100%;
+        }
+    }
+}
+
+p, li, ul {
+    @include sans-font(1.6rem);
+    color: $color-maintxt;
+    list-style: none;
+    padding: 0;
+    span {
+        color: $color-accent2;
+    }
+}
+
+ul {
+    margin-bottom: 50px;
+}
+
+h6 {
+     @include accent-font(3.6rem);
+     margin: 0;
+     line-height: 1;  
+}
+
+.fa-arrow-left {
+    font-size: (2rem);
+}
+
+.button4 {
+    background: $color-accent2;
+    padding: 10px;
+    border-radius: 10px;
+    border: 5px solid lightgray;
+    @include sans-font(2rem);
+    text-transform: uppercase;
+    text-decoration: none;
+    &:hover {
+    background: orangered;
+    }
+}
+
+.button3 {
+    @include dark-font(1.6rem);
+    background: white;
+    border: none;
+    margin-top: 40px;
+    text-decoration: underline;
+    &:hover {
+        color: $color-accent3;
+    }
+}
+
+.lauterbrunnen .location-div {
+    background-image: url(../assets/image-6.jpg);
+}
+
+.kalalau .location-div {
+    background-image: url(../assets/image-8.jpg);
+}
+
+.jasper .location-div {
+    background-image: url(../assets/image-10.jpg);
+}
+
+.zion .location-div {
+    background-image: url(../assets/image-12.jpg);
+}
+
+.laugavegur .location-div {
+    background-image: url(../assets/image-14.jpg);
+}
+
+.tonto .location-div {
+    background-image: url(../assets/image-16.jpg);
+}
+
+.fitzroytrek .location-div {
+    background-image: url(../assets/image-18.jpg);
+}
+
+.lagunaglacier .location-div {
+    background-image: url(../assets/image-20.jpg);
+}
+
+.malignecanyon .location-div {
+    background-image: url(../assets/image-22.jpg);
+}

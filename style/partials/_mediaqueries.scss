@@ -1,0 +1,186 @@
+@media (max-width: 1480px) {
+
+    .wrapper {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .main {
+        background-position: left top;
+    }
+}
+
+@media (max-width: 1375px) {
+    
+    h4 {
+        font-size: 2.8rem;
+    }
+
+    .hero {
+        background-position: left center;
+    }
+
+    .question-level-div {
+       padding-bottom: 100px;
+    }
+
+    .moon {
+        display: none;
+    }
+    
+
+    .question-people-div {
+        padding-bottom: 50px;
+    }
+}
+
+@media (max-width: 1080px) {
+
+    h4 {
+        font-size: 2rem;
+    }
+
+    label {
+        font-size: 1.6rem;
+    }
+
+    .header-nav {
+        padding: 20px;
+        justify-content: flex-start;
+        h2 {
+            font-size: 1.6rem;
+        }
+    }
+
+    .title {
+        font-size: 4.8rem;
+    }
+
+    .footprint-string {
+        left: 135px;
+        bottom: 50px;
+    }
+
+    .footprint-string-2 {
+        left: 0;
+        bottom: -10px;
+    }
+
+    .img-polaroids {
+        width: 50%;
+    }
+    
+    .location-div{
+        &-info {
+        flex-direction: column;
+        }
+        &-stats {
+        padding-bottom: 100px;
+        width: 100%;
+        }
+        &-img {
+            width: 100%;
+            img {
+            margin: 0;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 4rem;
+    }
+
+    .hero-start-icon {
+        bottom: 225px;
+    }
+
+    h4 {
+        font-size: 1.8rem;
+    }
+
+    .footprint-string-2 {
+        left: 100px;
+        bottom: -75px;
+    }
+}
+
+
+@media (max-width: 680px) {
+
+    .main {
+    background-image: url(../assets/image-1.png);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: right top;
+        &-start-icon {
+            display: none;
+        }
+    }
+
+    .form-question-type-div h4 {
+        font-size: 2.4rem;
+    }
+
+    .wrapper {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .form-question img  {
+        display: none;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .header-nav {
+        padding-top: 0;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+
+    .hero-start-icon {
+        bottom: 0;
+        left: 75px;
+    }
+
+    .main {
+        padding: 20px;
+    }
+
+    .form-question:nth-child(-n+2) {
+    padding-bottom: 50px;
+    }
+
+    .form-question {
+        padding-left: 10px;
+        &-level {
+            padding-left: 40px;
+        }
+    }
+
+    .people {
+        width: 90%;
+    }
+
+    .location-div-stats h6 {
+        font-size: 2.4rem;
+    }
+
+     .footprint {
+        display: none;
+    }
+
+    img {
+        display: none;
+    }
+
+    label {
+        width: 80%;
+    }
+}

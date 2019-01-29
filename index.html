@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>To The Trails</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Homemade+Apple|Montserrat:500" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="header-nav">
+            <h2>What is your next hiking adventure?</h2>
+        </nav>
+        <section class="hero">
+            <div class="hero-start">
+                <h1 class="title">To The Trails ...</h1>
+                <div class="hero-start-icon">
+                    <h3>Start</h3>
+                    <i class="fas fa-arrow-down fas-header"></i>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!-- FORM SECTION -->
+
+    <main>
+        <form action="" class="form wrapper">
+            <section class="form-question form-question-type">
+                <div class="form-question-type-div type">
+                    <h4>Destination Type ?</h4>
+                    <input type="radio" id="forest" value="forest" name="place" required="required">
+                    <label for="forest" class="radio-label">- Forest</label>
+                    <input type="radio" id="desert" value="desert" name="place">
+                    <label for="desert" class="radio-label">- Desert</label>
+                    <input type="radio" id="glacial" value="glacial" name="place">
+                    <label for="glacial" class="radio-label">- Glacial</label>
+
+                    <div class="button next-question">
+                        <h5>Next</h5>
+                        <i class="fas fa-hiking fas-main"></i>
+                    </div>
+                </div>
+
+                <figure class="img-map">
+                    <img src="./assets/image-2.png" alt="world map">
+                </figure>
+
+                <div class="footprint footprint-string">
+                    <img class="footprint footprint-left-1" src="./assets/footprint-left.png" alt="footprints leading to next question">
+                    <img class="footprint footprint-right-1" src="./assets/footprint-right.png" alt="footprints leading to next question">
+                    <img class="footprint footprint-left-2" src="./assets/footprint-left.png" alt="footprints leading to next question">
+                    <img class="footprint footprint-right-2" src="./assets/footprint-right.png" alt="footprints leading to next question">
+                    <img class="footprint footprint-left-3" src="./assets/footprint-left.png" alt="footprints leading to next question">
+                </div>
+            </section>
+
+
+            <section class="form-question form-question-people">
+                <figure class="img-gear">
+                    <img src="./assets/image-3.png" alt="camping gear from birds eye view">
+                </figure>
+
+                <div class="form-question-people-div people">
+                    <h4>Who is going ?</h4>
+                    <input type="radio" name="people" value="family" id="family" required="required">
+                    <label for="family" class="radio-label">- Family</label>
+                    <input type="radio" name="people" value="couple" id="couple">
+                    <label for="couple" class="radio-label">- Couple</label>
+                    <input type="radio" name="people" value="friends" id="friends">
+                    <label for="friends" class="radio-label">- Friends</label>
+                    <input type="radio" name="people" value="alone" id="alone">
+                    <label for="alone" class="radio-label">- Self Discovery</label>
+
+                    <div class="button2 next-question next-question-2">
+                        <h5>Next</h5>
+                        <i class="fas fa-hiking fas-main"></i>
+                    </div>
+                </div>
+                 
+                <div class="footprint footprint-string footprint-string-2">
+                    <img class="footprint footprint-left-4 footprint-left-1-B" src="./assets/footprint-left.png" alt="footprints leading to next question">
+                    <img class="footprint footprint-right-3" src="./assets/footprint-right.png" alt="footprints leading to next question">
+                    <img class="footprint footprint-left-5" src="./assets/footprint-left.png" alt="footprints leading to next question">
+                    <img class="footprint footprint-right-4" src="./assets/footprint-right.png" alt="footprints leading to next question">
+                    <img class="footprint footprint-left-6" src="./assets/footprint-left.png" alt="footprints leading to next question">
+                </div>
+            </section>
+
+            <section class="form-question form-question-level">
+                <div class="form-question-level-div level">
+                    <h4>Activity Level ?</h4>
+                    <input type="radio" name="activity" value="difficult" id="difficult" required="required">
+                    <label for="difficult" class="radio-label">- Difficult</label>
+                    <input type="radio" name="activity" value="moderate" id="moderate">
+                    <label for="moderate" class="radio-label">- Moderate</label>
+                    <input type="radio" name="activity" value="easy" id="easy">
+                    <label for="easy" class="radio-label">- Easy</label>
+
+                    <div class="submit-container">
+                        <input id="button" class="button-submit" type="submit" value="Let's Go">
+                    </div>
+                </div>
+
+                <figure class="img-polaroids">
+                    <img src="./assets/image-4.png" alt="polaroids of hiking spots">
+                </figure>   
+            </section>
+
+        </form>
+    </main>
+
+
+
+
+    <!-- RESULTS PAGES -->
+
+    <section class="location lauterbrunnen">
+        <div class="location-div"></div>
+        <div class="location-div-info wrapper">
+            <div class="location-div-stats">
+                <h6>Lauterbrennen</h6>
+                <p class="location-div-place">Switzerland</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi, aspernatur animi cum unde aut accusamus, inventore quibusdam nesciunt similique minima ut sequi qui soluta quidem consequatur molestiae illo a magnam rem debitis! Ut dolore dolorem soluta consectetur, vel cum officiis.</p>
+                <ul>
+                    <li>Difficulty:<span> Moderate</span></li>
+                    <li>Accomodation Type:<span> Resorts & Hotels</span></li>
+                    <li>Best Time to Hike:<span> Summer</span></li>
+                </ul>
+                <a class="button4" href="#">Explore Further</a>
+                <div class="back-button">
+                    <i class="fas fa-arrow-left"></i>
+                    <input id="button" class="button3" type="submit" value="Choose New Hike">
+                </div>
+            </div>
+            <figure class="location-div-img">
+            <img src="./assets/image-7.jpg" alt="Travellers on train looking out at Lauterbrunnen">
+            </figure>
+        </div>  
+    </section>
+
+    <section class="location kalalau">
+        <div class="location-div"></div>
+        <div class="location-div-info wrapper">
+            <div class="location-div-stats">
+                <h6>Kalalau Trail</h6>
+                <p class="location-div-place">Hawaii, United States</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi, aspernatur animi cum unde aut
+                    accusamus, inventore quibusdam nesciunt similique minima ut sequi qui soluta quidem consequatur
+                    molestiae illo a magnam rem debitis! Ut dolore dolorem soluta consectetur, vel cum officiis.</p>
+                <ul>
+                    <li>Difficulty:<span> Easy to Moderate</span></li>
+                    <li>Accomodation Type:<span> Resorts, Hotel, & Camping</span></li>
+                    <li>Best Time to Hike:<span> Spring & Summer</span></li>
+                </ul>
+                <a class="button4" href="#">Explore Further</a>
+                <div class="back-button">
+                    <i class="fas fa-arrow-left"></i>
+                    <input id="button" class="button3" type="submit" value="Choose New Hike">
+                </div>
+            </div>
+            <figure class="location-div-img">
+                <img src="./assets/image-9.jpg" alt="Travellers on train looking out at Lauterbrunnen">
+            </figure>
+        </div>
+    </section>
+
+    <section class="location jasper">
+        <div class="location-div"></div>
+        <div class="location-div-info wrapper">
+            <div class="location-div-stats">
+                <h6>Jasper</h6>
+                <p class="location-div-place">Alberta, Canada</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi, aspernatur animi cum unde aut
+                    accusamus, inventore quibusdam nesciunt similique minima ut sequi qui soluta quidem consequatur
+                    molestiae illo a magnam rem debitis! Ut dolore dolorem soluta consectetur, vel cum officiis.</p>
+                <ul>
+                    <li>Difficulty:<span> Easy to Moderate</span></li>
+                    <li>Accomodation Type:<span> Resorts & Hotels</span></li>
+                    <li>Best Time to Hike:<span> Summer</span></li>
+                </ul>
+                <a class="button4" href="#">Explore Further</a>
+                <div class="back-button">
+                    <i class="fas fa-arrow-left"></i>
+                    <input id="button" class="button3" type="submit" value="Choose New Hike">
+                </div>
+            </div>
+            <figure class="location-div-img">
+                <img src="./assets/image-11.jpg" alt="Travellers on train looking out at Lauterbrunnen">
+            </figure>
+        </div>
+    </section>
+
+    <section class="location zion">
+        <div class="location-div"></div>
+        <div class="location-div-info wrapper">
+            <div class="location-div-stats">
+                <h6>Zion National Park</h6>
+                <p class="location-div-place">Utah, United States</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi, aspernatur animi cum unde aut
+                    accusamus, inventore quibusdam nesciunt similique minima ut sequi qui soluta quidem consequatur
+                    molestiae illo a magnam rem debitis! Ut dolore dolorem soluta consectetur, vel cum officiis.</p>
+                <ul>
+                    <li>Difficulty:<span> Difficult</span></li>
+                    <li>Accomodation Type:<span> Hotel & Camping</span></li>
+                    <li>Best Time to Hike:<span> Spring & Fall</span></li>
+                </ul>
+                <a class="button4" href="#">Explore Further</a>
+                <div class="back-button">
+                    <i class="fas fa-arrow-left"></i>
+                    <input id="button" class="button3" type="submit" value="Choose New Hike">
+                </div>
+            </div>
+            <figure class="location-div-img">
+                <img src="./assets/image-13.jpg" alt="Travellers on train looking out at Lauterbrunnen">
+            </figure>
+        </div>
+    </section>
+
+    <section class="location laugavegur">
+        <div class="location-div"></div>
+        <div class="location-div-info wrapper">
+            <div class="location-div-stats">
+                <h6>Laugavegur</h6>
+                <p class="location-div-place">Iceland</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi, aspernatur animi cum unde aut
+                    accusamus, inventore quibusdam nesciunt similique minima ut sequi qui soluta quidem consequatur
+                    molestiae illo a magnam rem debitis! Ut dolore dolorem soluta consectetur, vel cum officiis.</p>
+                <ul>
+                    <li>Difficulty:<span> Easy to Moderate</span></li>
+                    <li>Accomodation Type:<span> Resorts & Hotels</span></li>
+                    <li>Best Time to Hike:<span> Summer</span></li>
+                </ul>
+                <a class="button4" href="#">Explore Further</a>
+                <div class="back-button">
+                    <i class="fas fa-arrow-left"></i>
+                    <input id="button" class="button3" type="submit" value="Choose New Hike">
+                </div>
+            </div>
+            <figure class="location-div-img">
+                <img src="./assets/image-15.jpg" alt="Travellers on train looking out at Lauterbrunnen">
+            </figure>
+        </div>
+    </section>
+
+    <section class="location tonto">
+        <div class="location-div"></div>
+        <div class="location-div-info wrapper">
+            <div class="location-div-stats">
+                <h6>Tonto Natural Spring</h6>
+                <p class="location-div-place">Pheonix, United States</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi, aspernatur animi cum unde aut
+                    accusamus, inventore quibusdam nesciunt similique minima ut sequi qui soluta quidem consequatur
+                    molestiae illo a magnam rem debitis! Ut dolore dolorem soluta consectetur, vel cum officiis.</p>
+                <ul>
+                    <li>Difficulty:<span> Easy to Moderate</span></li>
+                    <li>Accomodation Type:<span> Resorts & Hotels</span></li>
+                    <li>Best Time to Hike:<span> Fall & Spring</span></li>
+                </ul>
+                <a class="button4" href="#">Explore Further</a>
+                <div class="back-button">
+                    <i class="fas fa-arrow-left"></i>
+                    <input id="button" class="button3" type="submit" value="Choose New Hike">
+                </div>
+            </div>
+            <figure class="location-div-img">
+                <img src="./assets/image-17.jpg" alt="Travellers on train looking out at Lauterbrunnen">
+            </figure>
+        </div>
+    </section>
+
+    <section class="location fitzroytrek">
+        <div class="location-div"></div>
+        <div class="location-div-info wrapper">
+            <div class="location-div-stats">
+                <h6>Fitz Roy Trek</h6>
+                <p class="location-div-place">Patagonia</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi, aspernatur animi cum unde aut
+                    accusamus, inventore quibusdam nesciunt similique minima ut sequi qui soluta quidem consequatur
+                    molestiae illo a magnam rem debitis! Ut dolore dolorem soluta consectetur, vel cum officiis.</p>
+                <ul>
+                    <li>Difficulty:<span> Difficult</span></li>
+                    <li>Accomodation Type:<span> Camping</span></li>
+                    <li>Best Time to Hike:<span> Late Winter</span></li>
+                </ul>
+                <a class="button4" href="#">Explore Further</a>
+                <div class="back-button">
+                    <i class="fas fa-arrow-left"></i>
+                    <input id="button" class="button3" type="submit" value="Choose New Hike">
+                </div>
+            </div>
+            <figure class="location-div-img">
+                <img src="./assets/image-19.jpg" alt="Travellers on train looking out at Lauterbrunnen">
+            </figure>
+        </div>
+    </section>
+
+    <section class="location lagunaglacier">
+        <div class="location-div"></div>
+        <div class="location-div-info wrapper">
+            <div class="location-div-stats">
+                <h6>Laguna Glacier</h6>
+                <p class="location-div-place">Bolivia</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi, aspernatur animi cum unde aut
+                    accusamus, inventore quibusdam nesciunt similique minima ut sequi qui soluta quidem consequatur
+                    molestiae illo a magnam rem debitis! Ut dolore dolorem soluta consectetur, vel cum officiis.</p>
+                <ul>
+                    <li>Difficulty:<span> Moderate</span></li>
+                    <li>Accomodation Type:<span> Camping</span></li>
+                    <li>Best Time to Hike:<span> Spring to Fall</span></li>
+                </ul>
+                <a class="button4" href="#">Explore Further</a>
+                <div class="back-button">
+                    <i class="fas fa-arrow-left"></i>
+                    <input id="button" class="button3" type="submit" value="Choose New Hike">
+                </div>
+            </div>
+            <figure class="location-div-img">
+                <img src="./assets/image-21.jpg" alt="Travellers on train looking out at Lauterbrunnen">
+            </figure>
+        </div>
+    </section>
+
+    <section class="location malignecanyon">
+        <div class="location-div"></div>
+        <div class="location-div-info wrapper">
+            <div class="location-div-stats">
+                <h6>Maligne Canyon</h6>
+                <p class="location-div-place">Alberta, Canada</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi, aspernatur animi cum unde aut
+                    accusamus, inventore quibusdam nesciunt similique minima ut sequi qui soluta quidem consequatur
+                    molestiae illo a magnam rem debitis! Ut dolore dolorem soluta consectetur, vel cum officiis.</p>
+                <ul>
+                    <li>Difficulty:<span> Moderate</span></li>
+                    <li>Accomodation Type:<span> Resorts & Hotels</span></li>
+                    <li>Best Time to Hike:<span> All Year</span></li>
+                </ul>
+                <a class="button4" href="#">Explore Further</a>
+                <div class="back-button">
+                    <i class="fas fa-arrow-left"></i>
+                    <input id="button" class="button3" type="submit" value="Choose New Hike">
+                </div>
+            </div>
+            <figure class="location-div-img">
+                <img src="./assets/image-23.jpg" alt="Travellers on train looking out at Lauterbrunnen">
+            </figure>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

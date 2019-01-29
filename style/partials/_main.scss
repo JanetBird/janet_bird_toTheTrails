@@ -1,0 +1,207 @@
+main {
+    background-image: linear-gradient(white, rgb(203, 196, 166));
+}
+
+input[type="radio"] {
+    opacity: 0;
+    position: absolute;
+}
+
+.radio-label {
+    display:block;
+    position:relative;
+    padding: 5px;
+}
+
+.location, .hidden {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+label {
+    @include dark-font(2rem);
+    line-height: 1.25;
+}
+
+.form {
+    padding: 100px 0;
+    &-question:nth-child(-n+2) {
+        padding-bottom: 150px;
+    }
+}
+
+h4 {
+    @include accent-font(3.2rem);
+    margin: 0;
+}
+
+label:hover {
+    color: $color-accent2;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked+label{ 
+    text-decoration: line-through;
+    color: $color-accent2;
+ } 
+
+ .form-question {
+     position: relative;
+     display: flex;
+     align-items: center;
+     &-people {
+         justify-content: space-between;
+         figure {
+             width: 60%;
+         }
+         figure img {
+             width: 100%;
+         }
+     }
+ }
+
+ .footprint-string {
+      height: 200px;
+      display: flex;
+      align-items: flex-end;
+      transform: rotateZ(50deg);
+      position: absolute;
+      bottom: 100px;
+      left: 250px;
+      &-2 {
+          transform: rotateZ(145deg);
+      }
+ }
+
+ .animate {
+    opacity: 0;
+    animation: fade-out 5s forwards;
+ }
+ 
+ .footprint-left-1, .footprint-left-4 {
+    margin-right: 50px;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    &-B {
+        transform: rotateZ(45deg);
+        align-self: center;
+    }
+ }
+
+ .footprint-right-1, .footprint-right-3 {
+    transform: rotatez(25deg);
+    opacity: 0;
+    animation-delay: 1s;
+
+ }
+
+ .footprint-left-2, .footprint-left-5 {
+    align-self: center;
+    transform: rotatez(30deg);
+    opacity: 0;
+    animation-delay: 2s;
+ }
+
+ .footprint-right-2, .footprint-right-4  {
+    transform: rotatez(40deg);
+    opacity: 0;
+    animation-delay: 3s;
+ }
+
+ .footprint-left-3, .footprint-left-6 {
+    align-self: center;
+    transform: rotatez(50deg);
+    opacity: 0;
+    animation-delay: 4s;
+    margin-left: 40px;
+ }
+
+  @keyframes fade-out {
+  from { opacity: 1 }
+  to { opacity: 0 }
+}
+
+.next-question {
+    background: $color-accent2;
+    width: 175px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: 10px solid lightgray;
+    margin-top: 25px;
+    transition: background 0.25s;
+    &-2 {
+        margin-right: 175px;
+    }
+}
+
+.button, .button-submit {
+    background: $color-accent2;
+    width: 200px;
+    height: 110px;
+    border-radius: 20px;
+    border: 10px solid lightgray;
+    margin-top: 25px;
+    @include sans-font(2rem);
+    text-transform: uppercase;
+    transition: background 0.25s;
+    &:hover {
+    background: orangered;
+    cursor: pointer;
+    }
+}
+
+.next-question:hover {
+    background: orangered;
+    cursor: pointer;
+}
+
+.fas-main {
+    color: $color-sectxt;
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+}
+
+h5 {
+    @include sans-font(2rem);
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.opacity {
+    opacity: 1;
+}
+
+//images
+
+.img-map {
+    width: 40%;
+    opacity: 0.5;
+    img {
+        width: 100%;
+    }
+}
+
+.img-gear {
+    width: 40%;
+    img {
+        width: 100%;
+    }
+}
+
+.img-polaroids {
+    width: 60%;
+    img {
+        width: 100%;
+    }
+}
